@@ -1,0 +1,23 @@
+
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+
+export default prisma;
+
+// //more complex version below
+//https://vercel.com/guides/nextjs-prisma-postgres
+// import { PrismaClient } from '@prisma/client';
+
+// let prisma: PrismaClient;
+
+// if (process.env.NODE_ENV === 'production') {
+//   prisma = new PrismaClient();
+// } else {
+//   if (!global.prisma) {
+//     global.prisma = new PrismaClient();
+//   }
+//   prisma = global.prisma;
+// }
+
+// export default prisma;
